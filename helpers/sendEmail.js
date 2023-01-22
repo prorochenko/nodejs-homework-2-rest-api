@@ -12,9 +12,3 @@ const sendEmail = async data => {
 };
 
 module.exports = sendEmail;
-// const email = {
-//   to: 'weyoli6176@ibansko.com',
-//   from: 'prorochenko_os@ukr.net',
-//   subject: 'new user',
-//   html: '<p>Please, press the button to confirm your email</p>',
-// };
