@@ -6,7 +6,12 @@ const { User } = require('../../models');
 const reVerify = async (req, res) => {
   const { email } = req.body;
 
+  if (!email) {
+    throw BadRequest('missing required field email');
+  }
+
   const user = await User.findOne({ email });
+
   if (!user) {
     throw NotFound('User not found');
   }
